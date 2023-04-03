@@ -54,64 +54,38 @@ public class LearnNumber {
         return s;
     }
 
-    public static int StringSmall(int number) {
+    public static String StringSmall(int number) {
+        String str = "";
         if (number == 11) {
-            System.out.println("eleven");
+            str = "eleven";
         } else if (number == 12) {
-            System.out.println("twelve");
+            str = "twelve";
         } else if (number == 13) {
-            System.out.println("thirteen");
+            str = "thirteen";
         } else if (number == 15) {
-            System.out.println("fifteen");
+            str = "fifteen";
         } else {
-            System.out.println(StringSoSmall(number % 10) + "teen");
+            str = (number % 10 + "teen");
         }
-        return number;
+        return str;
     }
 
-    public static int StringNormal(int number) {
-        if (number < 30) {
-            System.out.println("Twenty " + StringSoSmall(number % 20));
-        } else if (number < 40) {
-            System.out.println("Thirty " + StringSoSmall(number % 30));
-        } else if (number < 50) {
-            System.out.println("Fourty " + StringSoSmall(number % 40));
-        } else if (number < 60) {
-            System.out.println("Thirty " + StringSoSmall(number % 50));
-        } else if (number < 70) {
-            System.out.println("Sixy " + StringSoSmall(number % 60));
-        } else if (number < 80) {
-            System.out.println("Seventy " + StringSoSmall(number % 70));
-        } else if (number < 90) {
-            System.out.println("Eighty " + StringSoSmall(number % 80));
-        } else if (number < 100) {
-            System.out.println("Ninety " + StringSoSmall(number % 90));
-        }
-        return number;
+    public static String StringNormal(int number) {
+        String str = "";
+        str = StringSoSmall(number / 10) + "ty " + StringSoSmall(number % 10);
+        return str;
     }
 
-    public static int StringSoLong(int number) {
-        if (number < 200) {
-            if (number - 100 < 10) {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringSoSmall(number % 100));
-            } else if (number - 100 < 20) {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringSmall(number - 100));
-            }else {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringNormal(number - 100));
-            }
-        } else if (number < 300) {
-            if (number - 200 < 10) {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringSoSmall(number % 200));
-            } else if (number - 200 < 20) {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringSmall(number - 200));
-            } else if (number - 200 < 30) {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringNormal(number - 200));
-            } else {
-                System.out.println(StringSoSmall((number + 1) - number) + " hundred " + StringNormal(number - 200));
-            }
+    public static String StringSoLong(int number) {
+        String str = "";
+        if (number < 1000 && number % 100 < 10) {
+            str = StringSoSmall(number / 100) + " hundred " + StringSoSmall(number % 100);
+        } else if (number < 1000 && number % 100 < 20) {
+            str = StringSoSmall(number / 100) + " hundred " + StringSmall(number % 100);
+        } else {
+            str = StringSoSmall(number / 100) + " hundred " + StringNormal(number % 100);
         }
-        return number;
+        return str;
     }
-
 }
 
