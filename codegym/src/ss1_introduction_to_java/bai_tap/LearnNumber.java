@@ -22,34 +22,34 @@ public class LearnNumber {
         String s = "";
         switch (number) {
             case 1:
-                s = "one";
+                s = "One";
                 break;
             case 2:
-                s = "two";
+                s = "Two";
                 break;
             case 3:
-                s = "three";
+                s = "Three";
                 break;
             case 4:
-                s = "four";
+                s = "Four";
                 break;
             case 5:
-                s = "five";
+                s = "Five";
                 break;
             case 6:
-                s = "six";
+                s = "Six";
                 break;
             case 7:
-                s = "seven";
+                s = "Seven";
                 break;
             case 8:
-                s = "eight";
+                s = "Eight";
                 break;
             case 9:
-                s = "nine";
+                s = "Nine";
                 break;
             case 10:
-                s = "ten";
+                s = "Ten";
         }
         return s;
     }
@@ -57,13 +57,13 @@ public class LearnNumber {
     public static String StringSmall(int number) {
         String str = "";
         if (number == 11) {
-            str = "eleven";
+            str = "Eleven";
         } else if (number == 12) {
-            str = "twelve";
+            str = "Twelve";
         } else if (number == 13) {
-            str = "thirteen";
+            str = "Thirteen";
         } else if (number == 15) {
-            str = "fifteen";
+            str = "Fifteen";
         } else {
             str = (number % 10 + "teen");
         }
@@ -79,11 +79,11 @@ public class LearnNumber {
     public static String StringSoLong(int number) {
         String str = "";
         if (number < 1000 && number % 100 < 10) {
-            str = StringSoSmall(number / 100) + " hundred " + StringSoSmall(number % 100);
+            str = StringSoSmall(number / 100) + " Hundred " + StringSoSmall(number % 100);
         } else if (number < 1000 && number % 100 < 20) {
-            str = StringSoSmall(number / 100) + " hundred " + StringSmall(number % 100);
+            str = StringSoSmall(number / 100) + " Hundred " + StringSmall(number % 100);
         } else {
-            str = StringSoSmall(number / 100) + " hundred " + StringNormal(number % 100);
+            str = StringSoSmall(number / 100) + " Hundred " + StringNormal(number % 100);
         }
         return str;
     }
