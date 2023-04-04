@@ -18,10 +18,10 @@ public class Tinh_Tong_Duong_Cheo {
             }
         }
         System.out.println(Arrays.deepToString(arr));
-        int tong=0;
-        int tong1=0;
-        for (int i = 0; i <arr.length ; i++) {
-          tong+=arr[i][i];
+        int tong = 0;
+        int tong1 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            tong += arr[i][i];
         }
         System.out.println(tong);
 
