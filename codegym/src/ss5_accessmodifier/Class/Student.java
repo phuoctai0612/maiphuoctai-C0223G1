@@ -1,4 +1,4 @@
-package ss5_accessmodifier.thuc_hanh;
+package ss5_accessmodifier.Class;
 
 public class Student {
     private int rollno;

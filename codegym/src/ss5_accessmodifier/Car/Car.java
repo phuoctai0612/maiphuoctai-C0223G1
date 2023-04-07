@@ -1,4 +1,4 @@
-package ss5_accessmodifier.thuc_hanh;
+package ss5_accessmodifier.Car;
 
 public class Car {
     private String name;

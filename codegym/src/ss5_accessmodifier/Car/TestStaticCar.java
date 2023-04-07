@@ -1,4 +1,6 @@
-package ss5_accessmodifier.thuc_hanh;
+package ss5_accessmodifier.Car;
+
+import ss5_accessmodifier.Car.Car;
 
 public class TestStaticCar {
     public static void main(String[] args) {

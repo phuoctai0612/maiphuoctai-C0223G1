@@ -1,4 +1,6 @@
-package ss5_accessmodifier.thuc_hanh;
+package ss5_accessmodifier.Class;
+
+import ss5_accessmodifier.Class.Student;
 
 public class TestStaticMethod {
     public static void main(String[] args) {
