@@ -28,6 +28,7 @@ public class ThucPham {
 
     public void setTenHang(String tenHang) {
         this.tenHang = tenHang;
+
     }
 
     public int getNsx() {
@@ -53,6 +54,9 @@ public class ThucPham {
     public void setDonGia(double donGia) {
         this.donGia = donGia;
     }
+    public int kiemTra(){
+        return this.nhh-this.nsx;
+    }
 
     @Override
     public String toString() {
@@ -61,6 +65,7 @@ public class ThucPham {
                 ", tenHang='" + tenHang + '\'' +
                 ", nsx=" + nsx +
                 ", nhh=" + nhh +
+                ", donGia=" + donGia +
                 '}';
     }
 }

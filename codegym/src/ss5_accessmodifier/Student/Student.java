@@ -5,15 +5,6 @@ public class Student {
     private String classe="C02";
     public Student(){
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getClasse() {
-        return classe;
-    }
-
     protected void setName(String name){
         this.name=name;
     }
