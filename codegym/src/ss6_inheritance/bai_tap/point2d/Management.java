@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Management {
     public static void main(String[] args) {
-        Point2d p2 = new Point2d();
-        Point3d p3 = new Point3d();
+        Point2D p2 = new Point2D();
+        Point3D p3 = new Point3D();
         p2.setX(3.4f);
         p2.setY(6.5f);
         System.out.println(p2.toString());

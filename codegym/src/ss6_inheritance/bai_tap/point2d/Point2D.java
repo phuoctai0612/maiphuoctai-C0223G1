@@ -2,14 +2,14 @@ package ss6_inheritance.bai_tap.point2d;
 
 import java.util.Arrays;
 
-public class Point2d {
+public class Point2D {
     private float x;
     private float y;
 
-    public Point2d() {
+    public Point2D() {
     }
 
-    public Point2d(float x, float y) {
+    public Point2D(float x, float y) {
         this.x = x;
         this.y = y;
     }
