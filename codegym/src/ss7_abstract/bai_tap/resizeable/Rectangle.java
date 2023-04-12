@@ -48,7 +48,7 @@ public class Rectangle extends Shape {
                 + getWidth()
                 + " and length="
                 + getLength()
-                + " Area Rec: " + getArea();
+                + " --Area Rec: " + getArea();
     }
 
     @Override
