@@ -10,7 +10,7 @@ public class Management {
         myList.add(3, "Nhàn");
         myList.add(4, "Sang");
         myList.add(5, "Huy");
-        myList.add(8, "TTT");
+        myList.add(10, "TTT");
         myList.remove("Huy");
         myList.remove("Sang");
         myList.remove("Tài");

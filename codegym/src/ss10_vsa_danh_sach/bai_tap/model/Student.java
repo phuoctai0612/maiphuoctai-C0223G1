@@ -1,17 +1,12 @@
-package ss10_vsa_danh_sach.bai_tap.bai_2;
+package ss10_vsa_danh_sach.bai_tap.model;
 
-import java.util.ArrayList;
+import ss10_vsa_danh_sach.bai_tap.model.Person;
 
 public class Student extends Person {
     private String lop;
     private double diemSo;
 
     public Student() {
-    }
-
-    public Student(String lop, double diemSo) {
-        this.lop = lop;
-        this.diemSo = diemSo;
     }
 
     public Student(String ma, String ten, String date, boolean gioiTinh, String lop, double diemSo) {

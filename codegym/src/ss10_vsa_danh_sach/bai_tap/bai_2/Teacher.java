@@ -1,6 +1,8 @@
 package ss10_vsa_danh_sach.bai_tap.bai_2;
 
-public class Teacher extends Person{
+import ss10_vsa_danh_sach.bai_tap.model.Person;
+
+public class Teacher extends Person {
     private String chuyenMon;
 
     public Teacher() {

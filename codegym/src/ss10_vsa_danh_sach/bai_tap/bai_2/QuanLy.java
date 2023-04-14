@@ -1,5 +1,7 @@
 package ss10_vsa_danh_sach.bai_tap.bai_2;
 
+import ss10_vsa_danh_sach.bai_tap.model.Student;
+
 import java.util.Scanner;
 
 public class QuanLy {

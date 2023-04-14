@@ -1,4 +1,4 @@
-package ss10_vsa_danh_sach.bai_tap.bai_2;
+package ss10_vsa_danh_sach.bai_tap.model;
 
 import java.util.Date;
 

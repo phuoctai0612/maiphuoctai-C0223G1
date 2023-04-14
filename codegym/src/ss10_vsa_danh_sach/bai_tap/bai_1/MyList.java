@@ -20,6 +20,9 @@ public class MyList<E> {
     public void add(int index, E e) {
         int count = 1;
         int count1 = 2;
+        if (index >= elements.length) {
+            ensureCapa();
+        }
         if (index < elements.length) {
             if (index > 0) {
                 for (int i = 0; i < elements.length - index; i++) {
@@ -31,11 +34,10 @@ public class MyList<E> {
             elements[index] = e;
         }
         size++;
-        if (size == elements.length) {
-            ensureCapa();
-        }
+
     }
 
+    // phương thức add của em nếu giá trị trùng nhau sẽ bị lỗi
     public E get(int i) {
         if (i >= size || i < 0) {
             throw new IndexOutOfBoundsException("Index: " + i + ", Size " + i);
