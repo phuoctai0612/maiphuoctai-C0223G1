@@ -1,7 +1,5 @@
 package ss10_vsa_danh_sach.bai_tap.model;
 
-import ss10_vsa_danh_sach.bai_tap.model.Person;
-
 public class Student extends Person {
     private String lop;
     private double diemSo;

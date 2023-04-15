@@ -1,7 +1,5 @@
 package ss10_vsa_danh_sach.bai_tap.model;
 
-import java.util.Date;
-
 public class Person {
     private String ma;
     private String ten;

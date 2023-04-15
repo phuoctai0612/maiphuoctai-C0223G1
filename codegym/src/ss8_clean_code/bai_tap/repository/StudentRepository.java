@@ -2,6 +2,8 @@ package ss8_clean_code.bai_tap.repository;
 
 import ss8_clean_code.bai_tap.model.Student;
 
+import java.util.List;
+
 public class StudentRepository implements IStudentRepository {
     private static Student[] students;
     static {
@@ -15,13 +17,14 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public void showListStudent() {
+    public List<ss10_vsa_danh_sach.bai_tap.model.Student> showListStudent() {
         for (Student s : students){
             if(s == null){
                 break;
             }
             System.out.println(s);
         }
+        return null;
     }
 
 }
