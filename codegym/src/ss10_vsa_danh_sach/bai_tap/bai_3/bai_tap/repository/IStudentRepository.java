@@ -1,6 +1,7 @@
-package src.demo_c0223G1.repository;
+package ss10_vsa_danh_sach.bai_tap.bai_3.bai_tap.repository;
 
-import src.demo_c0223G1.model.Student;
+
+import ss10_vsa_danh_sach.bai_tap.bai_3.bai_tap.model.Student;
 
 import java.util.List;
 

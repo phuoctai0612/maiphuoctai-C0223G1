@@ -1,6 +1,4 @@
-package src.demo_c0223G1.service;
-
-import src.demo_c0223G1.model.Student;
+package ss10_vsa_danh_sach.bai_tap.bai_3.bai_tap.service;
 
 public interface IStudentService {
     void displayStudentList();

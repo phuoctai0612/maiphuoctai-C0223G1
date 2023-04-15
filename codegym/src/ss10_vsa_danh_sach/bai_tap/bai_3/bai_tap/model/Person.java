@@ -1,4 +1,4 @@
-package src.demo_c0223G1.model;
+package ss10_vsa_danh_sach.bai_tap.bai_3.bai_tap.model;
 
 public abstract class Person {
     private int id;
