@@ -74,7 +74,7 @@ public class CodeGymController {
                     } while (flag);
                     break;
                 case "0":
-                    System.out.println("bạn đã thoát");
+                    System.out.println("bạn đã thoát CodeGym Management");
                     flag = false;
                     break;
                 default:

@@ -1,28 +1,46 @@
 package Test;
 
-public class ASS {
-    boolean solution(int[] a) {
-        if(a.length<=3){
-            return false;
-        }
-        int count=0;
-        int count1=0;
-        for(int i=0;i<a.length;i++){
-            count+=a[i];
-        }
-        for(int j=0;j<a.length;j++){
-            count-=a[j];
+class Student {
+    private String name;
+    private int age;
+    private String address;
 
-            if(count==count1){
-                return true;
-            }
-            count1+=a[j];
-        }
-        return false;
+    public Student() {
     }
 
-    public static void main(String[] args) {
-        ASS a=new ASS();
-        System.out.println(a.solution(new int[]{1, 2, 3, 3,6,9}));
+    public Student(String name, int age, String address) {
+        super();
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Student@name=" + name + ",age=" + age + ",address=" + address;
     }
 }

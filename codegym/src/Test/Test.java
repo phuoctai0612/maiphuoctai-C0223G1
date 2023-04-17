@@ -1,24 +1,22 @@
 package Test;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 class ChuNhat {
-    public int rong, dai;
-
-    public ChuNhat(int rong, int dai) {
-        this.rong = rong;
-        this.dai = dai;
-    }
-}
-
-class MyClass {
-    void method(ChuNhat x) {
-        x.rong = 5;
-        x.dai = 5;
-    }
-
     public static void main(String[] args) {
-        MyClass o = new MyClass();
-        ChuNhat cn = new ChuNhat(1, 1);
-        o.method(cn);
-        System.out.printf("x=%d, y=%d", cn.rong, cn.dai);
-    }
+Map<Character, Integer> mapChar = new TreeMap<>();
+mapChar.put('A', 1);
+mapChar.put('B', 2);
+mapChar.put('C', 3);
+mapChar.put('D', 4);
+mapChar.put('E', 5);
+mapChar.put('F', 6);
+
+// Cách duyệt Map với forEach() trong Java 8
+// đối số thứ nhất bên trong forEach là key
+// đối số thứ hai bên trong forEach là value
+mapChar.forEach((keyChar, valueInt) -> System.out.println(
+                    "Key = " + keyChar + ", value = " + valueInt));
+        }
 }

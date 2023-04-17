@@ -12,11 +12,9 @@ public class SwapNumber {
         int count = 0;
         System.out.println("nhập số muốn tìm số nhị phân");
         int kiemTra = sc.nextInt();
-        int count1 = 0;
 
         while (kiemTra != 0) {
-            count1 = kiemTra % 2;
-            st.push(count1);
+            st.push(kiemTra % 2);
             kiemTra /= 2;
             count++;
         }
@@ -25,6 +23,11 @@ public class SwapNumber {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = st.pop();
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Mảng số nhị phân: "+Arrays.toString(arr));
+        String str="";
+        for (Integer a: arr) {
+            str+=a;
+        }
+        System.out.println("Chuỗi số nhị phân: "+str);
     }
 }

@@ -56,7 +56,7 @@ public class TeacherServiceImpl implements ITeacherService {
         int id = Integer.parseInt(sc.nextLine());
         boolean deleteT = teacherRepository.deleteTeacher(id);
         if (deleteT) {
-            System.out.println("Đuổi thành công 1 ông thầy ra khỏi CodeGym: ");
+            System.out.println("Đuổi thành công 1 thầy(cô) ra khỏi CodeGym: ");
         } else {
             System.out.println("Hình như không có id thầy đó ở đây");
         }

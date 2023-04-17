@@ -11,7 +11,7 @@ public class Bracket {
         String[] b = a.split("");
         System.out.println(Arrays.toString(b));
         if (b[0].equals(")")) {
-            flag = false;
+            return;
         }
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b.length; j++) {
