@@ -44,6 +44,7 @@ public class ProductController {
                     break;
                 case "0":
                     flag = false;
+                    System.out.println("Bạn thoát thành công");
                     break;
                 default:
                     System.out.println("Bạn nhập chưa đúng");

@@ -9,22 +9,11 @@ public class ComputerRepositoryIplm implements IComputerRepository {
     public static ArrayList<Computer> computerArrayList = new ArrayList<>();
 
     static {
+        computerArrayList.add(new Computer(0, "PC", 80000, "TAB"));
         computerArrayList.add(new Computer(1, "PC", 5000, "Lenovo"));
         computerArrayList.add(new Computer(2, "PC", 6000, "ASUS"));
         computerArrayList.add(new Computer(3, "LapTop", 20000, "Mac"));
         computerArrayList.add(new Computer(4, "LapTop", 7000, "Predator"));
-    }
-
-    @Override
-    public int checkId(int id) {
-        for (int i = 0; i < id; i++) {
-            if (id == computerArrayList.get(i).getId()) {
-                return id = computerArrayList.size() + 1;
-            } else {
-                return id;
-            }
-        }
-        return id = computerArrayList.size();
     }
 
     @Override

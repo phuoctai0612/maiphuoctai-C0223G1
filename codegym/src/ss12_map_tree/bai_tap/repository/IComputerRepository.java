@@ -5,8 +5,6 @@ import ss12_map_tree.bai_tap.model.Computer;
 import java.util.List;
 
 public interface IComputerRepository {
-    int checkId(int id);
-
     List<Computer> getComputerList();
 
     void addNewProduct(Computer computer);

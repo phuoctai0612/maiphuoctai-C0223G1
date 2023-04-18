@@ -21,9 +21,7 @@ public class ComputerServiceIplm implements IComputerService {
 
     @Override
     public void addNewComputer() {
-        System.out.println("nhập id");
-        int id = Integer.parseInt(sc.nextLine());
-        int id1 = computerRepositoryIplm.checkId(id);
+        int id2 = computerRepositoryIplm.getComputerList().size();
         System.out.println("1. PC \n" +
                 "2. LapTop\n" +
                 "Mời bạn chọn");
@@ -41,7 +39,7 @@ public class ComputerServiceIplm implements IComputerService {
         String name = sc.nextLine();
         System.out.println("Nhập giá tiền");
         double giaTien = Double.parseDouble(sc.nextLine());
-        Computer computer = new Computer(id1, sanPham, giaTien, name);
+        Computer computer = new Computer(id2, sanPham, giaTien, name);
         computerRepositoryIplm.addNewProduct(computer);
         this.displayComputer();
     }
