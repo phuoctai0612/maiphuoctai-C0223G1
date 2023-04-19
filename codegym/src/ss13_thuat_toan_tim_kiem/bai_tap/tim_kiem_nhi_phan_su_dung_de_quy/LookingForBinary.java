@@ -26,13 +26,12 @@ public class LookingForBinary {
             }
         }
         System.out.println(Arrays.toString(strings));
-        System.out.println("vị trí của phần tử cần tìm là: "+binarySearch(strings,0, strings.length-1,7));
+        System.out.println("vị trí của phần tử cần tìm là: " + binarySearch(strings, 0, strings.length - 1, 7));
     }
 
     public static int binarySearch(int[] array, int left, int right, int value) {
-
-        int middle = (left + right) / 2;
-        if (middle>1) {
+        if (left <= right) {
+            int middle = (left + right) / 2;
             if (array[middle] == value) {
                 return middle;
             }
