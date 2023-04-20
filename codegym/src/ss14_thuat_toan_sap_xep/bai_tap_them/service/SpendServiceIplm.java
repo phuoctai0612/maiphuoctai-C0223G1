@@ -84,7 +84,7 @@ public class SpendServiceIplm implements ISpendService {
         String name = sc.nextLine();
         int check = spendRepositoryIplm.findStringListSpend(name);
         if (check >= 0) {
-            System.out.println(spendRepositoryIplm.showListSpend().get(spendRepositoryIplm.findStringListSpend(name)));
+            System.out.println(spendRepositoryIplm.showListSpend().get(check));
         } else {
             System.out.println("Không có tên này trong danh sách");
         }

@@ -1,26 +1,29 @@
 package Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Test1 {
-    public static void main(String[] args) {
-        List<Student> listStudents = new ArrayList<Student>();
-        // add students to list
-        listStudents.add(new Student("Tài", 5, "Huế"));
-        listStudents.add(new Student("Hoa", 19, "Hanoi"));
-        listStudents.add(new Student("Phu", 20, "Hanoi"));
-        listStudents.add(new Student("Quy", 22, "Hanoi"));
-        Collections.sort(listStudents, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                return ((Integer)o2.getAge()).compareTo(((Integer)o1.getAge()));
+    public static String a(String s) {
+        String[] arr = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"};
+        String[] arr1 = s.split("");
+        String a = arr1[0].toLowerCase();
+        System.out.println(Arrays.toString(arr1));
+        for (int i = 1; i < arr1.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr1[i].equals(arr[j].toUpperCase())) {
+                    a += " " + arr[j];
+                    break;
+                } else if (arr1[i].equals(arr[j])){
+                    a += arr[j].toLowerCase();
+                    break;
+                }
             }
-        });
-        for (Student t: listStudents) {
-            System.out.println(t);
         }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Test1 test1=new Test1();
+        System.out.println(Test1.a("CodegymDaNang"));
     }
 }
