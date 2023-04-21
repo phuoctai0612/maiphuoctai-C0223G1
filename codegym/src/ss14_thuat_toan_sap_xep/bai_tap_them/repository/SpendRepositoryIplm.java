@@ -19,7 +19,7 @@ public class SpendRepositoryIplm implements ISpendRepository {
     }
 
     @Override
-    public List<Spend> showListSpend()   {
+    public List<Spend> showListSpend() {
         return spendList;
     }
 
