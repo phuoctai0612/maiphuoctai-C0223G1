@@ -14,13 +14,6 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public List<Product> showProduct() {
-        list.clear();
-        Product product = new Product("1", "Tài", 1000000000, "Bé Thông");
-        Product product1 = new Product("2", "Bánh Coriel", 20000, "Coriel");
-        Product product2 = new Product("3", "Kẹo Đồng", 10000000, "Mafia");
-        list.add(product);
-        list.add(product1);
-        list.add(product2);
         ReadAndWrite.writeFile(list);
         return ReadAndWrite.readFile();
     }
@@ -40,5 +33,16 @@ public class ProductRepository implements IProductRepository {
             }
         }
         return list1;
+    }
+
+    @Override
+    public void deleteProduct(String id) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId().equals(id)){
+                list.remove(i);
+            }
+        }
+        ReadAndWrite.readFile();
+        ReadAndWrite.writeFile(list);
     }
 }

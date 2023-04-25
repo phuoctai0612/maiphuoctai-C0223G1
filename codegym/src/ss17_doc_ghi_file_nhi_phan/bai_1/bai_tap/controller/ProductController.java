@@ -15,6 +15,7 @@ public class ProductController {
                     "1. Hiển thị sản phẩm\n" +
                     "2. Tìm kiếm sản phẩm\n" +
                     "3. Thêm sản phẩm\n" +
+                    "4. Xoa\n" +
                     "Mời bạn chọn");
             String str = sc.nextLine();
             switch (str) {
@@ -26,6 +27,9 @@ public class ProductController {
                     break;
                 case "3":
                     productService.addNewProduct();
+                    break;
+                case "4":
+                    productService.deleteProduct();
                     break;
                 default:
                     System.out.println("Không tồn tại");

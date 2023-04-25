@@ -6,4 +6,5 @@ public interface IProductService {
     void findProduct();
 
     void addNewProduct();
+    void deleteProduct();
 }

@@ -10,4 +10,5 @@ public interface IProductRepository {
     void addNewProduct(Product product);
 
     List<Product> findProduct(String name);
+    void deleteProduct(String id);
 }

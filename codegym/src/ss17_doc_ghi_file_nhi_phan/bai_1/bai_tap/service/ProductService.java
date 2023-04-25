@@ -45,4 +45,11 @@ public class ProductService implements IProductService {
         Product product = new Product(id, name, gia, hangSanXuat);
         productRepository.addNewProduct(product);
     }
+
+    @Override
+    public void deleteProduct() {
+        System.out.println("Nhap id");
+        String id=sc.nextLine();
+        productRepository.deleteProduct(id);
+    }
 }

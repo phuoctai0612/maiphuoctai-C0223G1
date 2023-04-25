@@ -27,7 +27,7 @@ public class ReadAndWrite {
 
     public static void writeFile(List<Product> list) {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(PART_SOURCE_FILE);
+            FileOutputStream fileOutputStream = new FileOutputStream(PART_SOURCE_FILE,true);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(list);
             objectOutputStream.close();

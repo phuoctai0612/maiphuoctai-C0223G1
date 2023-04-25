@@ -3,10 +3,20 @@ package test_bai_thi_module_2;
 import java.util.Arrays;
 
 public class Bai_3 {
+
+    private static EmailExample emailExample;
+    public static final String[] validEmail = new String[]{"a@gmail.com", "ab@yahoo.com", "abc@hotmail.com"};
+    public static final String[] invalidEmail = new String[]{"@gmail.com", "ab@gmail.", "@#abc@gmail.com"};
+
     public static void main(String[] args) {
-        String  a ="asdasd";
-        char[] b=new char[a.length()];
-        a.getChars(0, b.length-3, b,1);
-        System.out.println(Arrays.toString(b));
+        emailExample = new EmailExample();
+        for (String email : validEmail) {
+            boolean isvalid = emailExample.validate(email);
+            System.out.println("Email is " + email + " is valid: " + isvalid);
+        }
+        for (String email : invalidEmail) {
+            boolean isvalid = emailExample.validate(email);
+            System.out.println("Email is " + email + " is valid: " + isvalid);
+        }
     }
 }
