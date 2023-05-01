@@ -7,6 +7,5 @@ public interface ICustomerServise extends IService{
     @Override
     void addNewList();
 
-    @Override
     void editList();
 }

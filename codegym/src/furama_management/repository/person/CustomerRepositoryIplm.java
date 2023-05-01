@@ -25,11 +25,11 @@ public class CustomerRepositoryIplm implements ICustomerRepository {
 
     @Override
     public void addList(Customer customer) {
-
+       customerList.add(customer);
     }
 
     @Override
     public void editList() {
-
+        ReadAndWriteCustomer.writeList(CHECK,customerList,false);
     }
 }

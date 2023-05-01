@@ -16,12 +16,13 @@ public class ReadAndWriteCustomer {
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
             String temp = "";
-            while ((temp = bufferedReader.readLine()) != null) {
+            while ((temp = bufferedReader.readLine()) != null&&!temp.equals("")) {
                 String[] arr = temp.split(",");
                 employees.add(new Customer(arr[0], arr[1], arr[2], arr[3], arr[4],
                         arr[5], arr[6], arr[7], arr[8]));
             }
-
+bufferedReader.close();
+            fileReader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -6,7 +6,6 @@ public interface IEmployeeService extends IService{
 
     @Override
     void addNewList();
+void editList();
 
-    @Override
-    void editList();
 }

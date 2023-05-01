@@ -6,6 +6,5 @@ public interface IBookingService extends IService{
     @Override
     void addNewList();
 
-    @Override
-    void editList();
+
 }

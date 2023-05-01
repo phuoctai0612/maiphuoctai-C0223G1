@@ -30,14 +30,14 @@ public class FuramaController {
         do {
 
             String check;
-            System.out.println("-------------------Quản lý khu resorts Furuma------------------\n" +
+            System.out.print("-------------------Quản lý khu resorts Furuma------------------\n" +
                     "1.\tEmployee Management \n" +
                     "2.\tCustomer Management\n" +
                     "3.\tFacility Management \n" +
                     "4.\tBooking Management\n" +
                     "5.\tPromotion Management\n" +
                     "6. Exit\n" +
-                    "Mời bạn lựa chọn");
+                    "Mời bạn lựa chọn: ");
             int check1 = 0;
             try {
                 check1 = Integer.parseInt(sc.nextLine());

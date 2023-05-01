@@ -14,7 +14,8 @@ public class Villa extends Facility {
         this.soTangVilla = soTangVilla;
     }
 
-    public Villa(int id, String name, double areaUser, double price, int maxPerson, String date, String tieuChuanPhong, double dienTichHo, int soTangVilla) {
+    public Villa(String id, String name, double areaUser, double price, int maxPerson,
+                 String date, String tieuChuanPhong, double dienTichHo, int soTangVilla) {
         super(id, name, areaUser, price, maxPerson, date);
         this.tieuChuanPhong = tieuChuanPhong;
         this.dienTichHo = dienTichHo;
@@ -23,10 +24,13 @@ public class Villa extends Facility {
 
     @Override
     public String toString() {
-        return "Villa{" +
-                "tieuChuanPhong='" + tieuChuanPhong + '\'' +
-                ", dienTichHo=" + dienTichHo +
-                ", soTangVilla=" + soTangVilla +
+        return "Villa {" + super.toString()+
+                " tieuChuanPhong= " + tieuChuanPhong + '\'' +
+                ", dienTichHo= " + dienTichHo +
+                ", soTangVilla= " + soTangVilla +
                 '}';
+    }
+    public String fileVilla(){
+       return super.fileFacility()+","+tieuChuanPhong+","+dienTichHo+","+soTangVilla;
     }
 }

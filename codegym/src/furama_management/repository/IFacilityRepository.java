@@ -1,18 +1,11 @@
 package furama_management.repository;
 
-import furama_management.model.person.Employee;
+import furama_management.model.resorts.Facility;
 
-import java.util.List;
+import java.util.Map;
 
-public interface IFacilityRepository extends IRepository{
-
-    List<Employee> showList();
+public interface IFacilityRepository {
 
 
-    List<Employee> addList();
-
-
-    void editList();
-
-    void displayListFacilityMain();
+    Map<Facility,Integer> displayListFacilityMain();
 }

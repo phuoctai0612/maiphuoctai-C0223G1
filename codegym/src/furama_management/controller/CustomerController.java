@@ -10,12 +10,12 @@ public class CustomerController {
         Scanner sc=new Scanner(System.in);
         boolean flag =true;
         do {
-            System.out.println("------------------------Customer Management-------------------------- \n" +
+            System.out.print("------------------------Customer Management-------------------------- \n" +
                     "1.\tDisplay list customers\n" +
                     "2.\tAdd new customer\n" +
                     "3.\tEdit customer\n" +
                     "4.\tReturn main menu\n" +
-                    "Mời bạn lựa chọn");
+                    "Mời bạn lựa chọn: ");
             String check2 = sc.nextLine();
             switch (check2) {
                 case "1":

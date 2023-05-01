@@ -1,12 +1,13 @@
 package furama_management.repository;
 
+import furama_management.model.person.Customer;
 import furama_management.model.person.Employee;
 
 import java.util.List;
 
-public interface IBookingRepository extends IRepository{
+public interface IBookingRepository {
 
-    List<Employee> showList();
+    List<Customer> showList();
 
 
     List<Employee> addList();

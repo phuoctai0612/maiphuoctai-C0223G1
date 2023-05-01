@@ -80,8 +80,7 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "ma=" + ma +
+        return "ma=" + ma +
                 ", ten='" + ten + '\'' +
                 ", ngaySinh='" + ngaySinh + '\'' +
                 ", gioiTinh='" + gioiTinh + '\'' +

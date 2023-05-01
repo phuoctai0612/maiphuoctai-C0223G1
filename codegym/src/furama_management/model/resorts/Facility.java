@@ -1,7 +1,7 @@
 package furama_management.model.resorts;
 
 public abstract class Facility {
-    private int id;
+    private String id;
     private String name;
     private double areaUser;
     private double price;
@@ -11,7 +11,7 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(int id, String name, double areaUser, double price, int maxPerson, String date) {
+    public Facility(String id, String name, double areaUser, double price, int maxPerson, String date) {
         this.id = id;
         this.name = name;
         this.areaUser = areaUser;
@@ -20,11 +20,11 @@ public abstract class Facility {
         this.date = date;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -70,13 +70,15 @@ public abstract class Facility {
 
     @Override
     public String toString() {
-        return "Furuma{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", areaUser=" + areaUser +
-                ", price=" + price +
-                ", maxPerson=" + maxPerson +
-                ", date='" + date + '\'' +
-                '}';
+        return "id= " + id +
+                ", name= " + name + '\'' +
+                ", areaUser= " + areaUser +
+                ", price= " + price +
+                ", maxPerson= " + maxPerson +
+                ", date= " + date + '\''
+                ;
+    }
+    public String fileFacility(){
+        return id+","+name+","+areaUser+","+price+","+maxPerson+","+date;
     }
 }

@@ -12,7 +12,7 @@ public class House extends Facility {
         this.soTangHouse = soTang;
     }
 
-    public House(int id, String name, double areaUser, double price, int maxPerson, String date, String tieuChuan, int soTang) {
+    public House(String id, String name, double areaUser, double price, int maxPerson, String date, String tieuChuan, int soTang) {
         super(id, name, areaUser, price, maxPerson, date);
         this.tieuChuan = tieuChuan;
         this.soTangHouse = soTang;
@@ -36,9 +36,12 @@ public class House extends Facility {
 
     @Override
     public String toString() {
-        return "House{" +
-                "tieuChuan='" + tieuChuan + '\'' +
-                ", soTang=" + soTangHouse +
+        return "House {" + super.toString()+
+                "tieuChuan= " + tieuChuan + '\'' +
+                ", soTang= " + soTangHouse +
                 '}';
+    }
+    public String fileHouse(){
+       return super.fileFacility()+","+tieuChuan+","+soTangHouse;
     }
 }

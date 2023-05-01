@@ -1,7 +1,5 @@
 package furama_management.model.person;
 
-
-
 public class Customer extends Person {
     private String loaiKhach;
     private String diaChi;
@@ -18,6 +16,22 @@ public class Customer extends Person {
                     String soCMND, String soDienThoai, String email, String loaiKhach, String diaChi) {
         super(ma, ten, ngaySinh, gioiTinh, soCMND, soDienThoai, email);
         this.loaiKhach = loaiKhach;
+        this.diaChi = diaChi;
+    }
+
+    public String getLoaiKhach() {
+        return loaiKhach;
+    }
+
+    public void setLoaiKhach(String loaiKhach) {
+        this.loaiKhach = loaiKhach;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
     }
 

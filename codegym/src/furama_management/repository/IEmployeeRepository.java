@@ -4,7 +4,7 @@ import furama_management.model.person.Employee;
 
 import java.util.List;
 
-public interface IEmployeeRepository extends IRepository{
+public interface IEmployeeRepository {
 
     List<Employee> showList();
 

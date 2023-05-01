@@ -8,11 +8,11 @@ public class PromotionController {
         Scanner sc=new Scanner(System.in);
         boolean flag=true;
         do {
-            System.out.println("----------------Promotion Management-----------------\n" +
+            System.out.print("----------------Promotion Management-----------------\n" +
                     "1.\tDisplay list customers use service\n" +
                     "2.\tDisplay list customers get voucher\n" +
                     "3.\tReturn main menu\n" +
-                    "Mời bạn lựa chọn");
+                    "Mời bạn lựa chọn: ");
             String check4 = sc.nextLine();
             switch (check4) {
                 case "1":
